@@ -29,6 +29,7 @@ public class PingController {
         ctx.render("/ping/ping.html");
     }
 
+
     private String recuperarNomeServico(String pingHost) {
         if (pingHost == null || pingHost.isEmpty()) {
             logger.warn("Host do serviço de ping não configurado.");
